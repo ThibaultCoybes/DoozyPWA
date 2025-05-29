@@ -1,0 +1,162 @@
+/* Styles pour la page de recherche */
+.container {
+  background-color: #fff;
+  height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainContent {
+  background: linear-gradient(180deg, rgba(255, 143, 170, .3) 0%, rgba(255, 196, 83, 0.3) 50%, rgba(242, 103, 42, .3) 100%);
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding-bottom: 80px; /* Espace pour la navbar */
+  scrollbar-width: thin;
+  scrollbar-color: #FF7844 #FFF5EB;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.searchBarContainer {
+  padding: 0 15px;
+}
+
+.searchBarWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #FF8FAA;
+  border-radius: 30px;
+  padding: 2px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.searchIcon, .micIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.categoriesContainer {
+  display: flex;
+  overflow-x: auto;
+  padding: 5px 0 15px 0;
+  gap: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.categoriesContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.categoryItem {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #FFF;
+  border: 1px solid rgba(255, 120, 68, 0.3);
+  font-size: 14px;
+  color: #FF7844;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.historyContainer {
+  margin-bottom: 25px;
+}
+
+.historyItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+.historyItemLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.historyItemText {
+  font-size: 14px;
+  color: #FF8FAA;
+}
+
+.deleteButton {
+  cursor: pointer;
+}
+
+.trendingContainer {
+  padding: 0 15px;
+}
+
+.trendingTitle {
+  color: #FF7844;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.trendingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.trendingItem {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.trendingItemContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles pour la barre de défilement */
+.mainContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mainContent::-webkit-scrollbar-track {
+  background: #FFF5EB;
+  border-radius: 10px;
+}
+
+.mainContent::-webkit-scrollbar-thumb {
+  background-color: #FF7844;
+  border-radius: 10px;
+  border: 2px solid #FFF5EB;
+}

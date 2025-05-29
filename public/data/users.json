@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "username": "CreativeCrafts",
+    "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
+    "name": "Alice Wonderland",
+    "bio": "Passionnée par le DIY et les tutoriels créatifs !"
+  },
+  {
+    "id": "2",
+    "username": "ArtisticJourney",
+    "avatar": "https://randomuser.me/api/portraits/men/45.jpg",
+    "name": "Bob The Artist",
+    "bio": "Explorateur des arts visuels et du fait-main."
+  },
+  {
+    "id": "3",
+    "username": "DIYQueen",
+    "avatar": "https://randomuser.me/api/portraits/women/63.jpg",
+    "name": "Carol Maker",
+    "bio": "Reine du bricolage et des astuces maison."
+  },
+  {
+    "id": "4",
+    "username": "HandmadeHobbyist",
+    "avatar": "https://randomuser.me/api/portraits/men/26.jpg",
+    "name": "David Crafter",
+    "bio": "Amateur de projets faits main et de partage de connaissances."
+  }
+]

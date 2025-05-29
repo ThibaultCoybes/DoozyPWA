@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 95%;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--navbar-item-color);
+  font-size: var(--font-size-xs);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  position: relative;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+.centerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(255, 143, 170, 0.3);
+  position: relative;
+  top: -5px;
+}
+
+.active {
+  color: var(--active-icon-color);
+}
+
+.avatarContainer {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activeIndicator {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--active-icon-color);
+}

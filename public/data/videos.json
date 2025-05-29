@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "userId": "1",
+    "username": "craft_tutorial",
+    "userAvatar": "/images/avatars/default.jpg",
+    "title": "How to craft a love heart trinket tray [Valentine's edition]",
+    "description": "Ceci est une description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "videoUrl": "/videos/video.mp4",
+    "thumbnailUrl": "/images/thumbnails/default.jpg",
+    "likes": 1245,
+    "comments": 89,
+    "shares": 45,
+    "categories": ["diy", "craft", "valentine"],
+    "createdAt": "2025-04-15T10:30:00.000Z"
+  },
+  {
+    "id": "2",
+    "userId": "2",
+    "username": "creative_mind",
+    "userAvatar": "/images/avatars/default.jpg",
+    "title": "DIY Polymer Clay Earrings Tutorial",
+    "description": "Dans cette vidéo, je vous montre comment créer de superbes boucles d'oreilles en pâte polymère avec un design unique et personnel. Parfait pour les débutants et facile à suivre!",
+    "videoUrl": "/videos/video.mp4",
+    "thumbnailUrl": "/images/thumbnails/default.jpg",
+    "likes": 2567,
+    "comments": 134,
+    "shares": 78,
+    "categories": ["diy", "jewelry", "polymer"],
+    "createdAt": "2025-04-10T14:45:00.000Z"
+  },
+  {
+    "id": "3",
+    "userId": "3",
+    "username": "doozy_official",
+    "userAvatar": "/images/avatars/default.jpg",
+    "title": "Upcycled Denim Jacket Transformation",
+    "description": "Voici comment transformer une vieille veste en jean en une pièce de mode unique et tendance. Parfait pour donner une seconde vie à vos vêtements!",
+    "videoUrl": "/videos/video.mp4",
+    "thumbnailUrl": "/images/thumbnails/default.jpg",
+    "likes": 3890,
+    "comments": 245,
+    "shares": 189,
+    "categories": ["fashion", "upcycling", "diy"],
+    "createdAt": "2025-04-05T09:15:00.000Z"
+  }
+]

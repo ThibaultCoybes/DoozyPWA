@@ -1,0 +1,135 @@
+/* Styles pour le modal de partage */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: auto; /* Ajustement automatique à la hauteur du contenu */
+  max-height: 50vh; /* Ne dépasse pas 50% de la hauteur de l'écran */
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1001;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.modalTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FF7844;
+  text-align: center;
+  flex: 1;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usersList {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
+.userOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  overflow: hidden; /* Pour s'assurer que l'image ne déborde pas du cercle */
+}
+
+.userAvatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Pour s'assurer que l'image couvre bien tout le cercle */
+}
+
+.userOption:nth-child(1) .userCircle { background-color: #FF7844; }
+.userOption:nth-child(2) .userCircle { background-color: #FF9D76; }
+.userOption:nth-child(3) .userCircle { background-color: #4CD964; }
+.userOption:nth-child(4) .userCircle { background-color: #FFCC00; }
+.userOption:nth-child(5) .userCircle { background-color: #5AC8FA; }
+.userOption:nth-child(6) .userCircle { background-color: #BF5AF2; }
+.userOption:nth-child(7) .userCircle { background-color: #FF2D55; }
+
+.userName {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.shareButton {
+  display: block;
+  width: 150px;
+  margin: 0 auto 20px auto;
+  padding: 12px;
+  background-color: #FF8FAA;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
